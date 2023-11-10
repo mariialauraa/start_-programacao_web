@@ -1,0 +1,74 @@
+/* Arquivo em cascata */
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif; /* caso não carregue a opc 1, temos uma 2 opc */
+  margin: 0;
+  padding: 0;
+}
+
+body { /* todo o corpo da página */
+  color: #263138;
+}
+
+header {
+  background-color: #FF9A6C;
+  display: flex;
+  align-items: center; /* alinhar os itens na vertical */
+  justify-content: space-between; /* justificar texto na horizontal */
+  padding-left: 80px; /* é tipo um espaçamento (margem) por dentro */
+  padding-right: 80px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+header a { /* caminho do elemento */
+  color: #FFFFFF;
+  font-weight: 600; /* muda a fonte para negrito */
+  padding: 16px;
+  text-decoration: none; /* tira o sublinhado */
+}
+
+#inicio {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* um espaçamento entre a imagem e o texto */
+  /* top, direita, baixo e esquerda */
+  padding: 24px 30px 80px 30px;
+  position: relative;
+}
+
+h1, 
+h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 24px; /* espaço entre o título e o texto */
+}
+
+.paragrafo {
+  line-height: 150%; /* altura de linha */
+  margin-bottom: 24px;
+}
+
+.botao {
+  background-color: #FF725E;
+  border-radius: 8px; /* borda a arredondada */
+  color: #FFFFFF;
+  /* vertical (top e baixo) e horizontal (esquerda e direita) */
+  padding: 16px 32px;
+  text-decoration: none;
+}
+
+.botao-transparente {
+  background-color: transparent;
+  color: #FF725E;
+  padding: 16px 32px;
+  text-underline-offset: 4px; /* uma leve espaçada no sublinhado */
+}
+
+.absolute {
+  position: absolute; /* na posição absoluta da página */
+  bottom: -50; /* fundo */
+  left: 0;
+  width: 100%; /* largura inteira da página */
+  z-index: -10; /* profundidade do elemento */
+}
